@@ -13,16 +13,15 @@
     <body>
         <div id="container"></div>
         <script type="text/babel">//Use babel
-        var destination = document.querySelector("#container"); 
+
+        class HelloWorld extends React.Component {
+            render() {
+                return <p>Hello, componentized World!</p>
+            }
+        }
         ReactDOM.render(
-            <div>
-                <h3><i>Avengers</i></h3>
-                <h3><i>Superman</i></h3>
-                <h3><i>Batman</i></h3>
-                <h3><i>Wonder Woman</i></h3>
-                <h3><i>Thor</i></h3>
-            </div>,
-            destination );
+            <HelloWorld />,
+            document.querySelector("#container"));
 
     </script>
     </body>
